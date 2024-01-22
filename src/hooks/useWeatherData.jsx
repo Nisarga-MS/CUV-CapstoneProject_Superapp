@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const climateReqURL = `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=Bengaluru`;
+const climateReqURL = `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=Bengaluru`;
 
 export default function useWeatherData() {
   const [weatherData, setWeatherData] = useState(null);
