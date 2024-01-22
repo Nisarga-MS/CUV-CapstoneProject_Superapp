@@ -122,15 +122,13 @@ const Category = () => {
   const [categories, setCategories] = useState([]);
   const [lengthError, setLengthError] = useState(false);
 
-
-
   const removeCategory = (value) => {
     const newCategoryList = categories.filter((category) => category !== value);
     setCategories(newCategoryList);
   };
 
   const handleSubmit = () => {
-    if (categories.length <3) {
+    if (categories.length < 3) {
       setLengthError(true);
       return;
     }
@@ -147,17 +145,19 @@ const Category = () => {
         <div style={{ marginTop: "10vh" }}>
           <div className={styles.selectedCategory}>
             {categories.map((category) => (
-              <div
-                key={category}
-              >
+              <div key={category}>
                 {category}
                 <span onClick={() => removeCategory(category)}>X</span>
               </div>
             ))}
           </div>
 
-           {(lengthError && categories.length<3) && 
-              <p className={styles.error}><img src={errorPick} alt="error" width={25} height={20} />&nbsp;&nbsp;Minimum 3 categories required</p>}
+          {lengthError && categories.length < 3 && (
+            <p className={styles.error}>
+              <img src={errorPick} alt="error" width={25} height={20} />
+              &nbsp;&nbsp;Minimum 3 categories required
+            </p>
+          )}
         </div>
       </div>
       <div className={styles.right}>
@@ -197,10 +197,11 @@ const BlockCard = (props) => {
     }
   };
 
-  useEffect(()=>{
-    const isExist = props.categoriesList.includes(props.genreDetails.id) === true;
+  useEffect(() => {
+    const isExist =
+      props.categoriesList.includes(props.genreDetails.id) === true;
     setIsSelected(isExist);
-  },[props.categoriesList, props.genreDetails.id]);
+  }, [props.categoriesList, props.genreDetails.id]);
 
   return (
     <div
@@ -216,8 +217,8 @@ const BlockCard = (props) => {
         border: `${isSelected ? "4px solid green" : "4px solid white"}`,
       }}
       key={props.key}
-    >     
-      <p style={{ fontWeight:"500",  fontSize:"24px" , marginBottom:"14px"}}>
+    >
+      <p style={{ fontWeight: "500", fontSize: "24px", marginBottom: "14px" }}>
         {props.genreDetails.id}
       </p>
       {props.genreDetails.image}

@@ -1,10 +1,10 @@
-import React from 'react'
-import Movies from '../components/Movies/Movies';
+import React from "react";
+import Movies from "../components/Movies/Movies";
 
 export default function MoviesPage() {
   return (
     <div>
-        <Movies />
+      <Movies />
     </div>
-  )
+  );
 }

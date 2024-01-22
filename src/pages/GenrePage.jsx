@@ -4,7 +4,7 @@ import MovieGenre from "../components/MovieGenre/MovieGenre";
 export default function GenrePage() {
   return (
     <div>
-     <MovieGenre />
+      <MovieGenre />
     </div>
   );
 }
