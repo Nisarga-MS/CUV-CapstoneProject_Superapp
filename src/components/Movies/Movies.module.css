@@ -1,0 +1,52 @@
+.browse {
+  max-height: 100vh;
+  overflow-y: hidden;
+  background-color: black;
+}
+.browse .browseHeader {
+  width: 90%;
+  margin: 22.5px auto;
+}
+.browse .browseHeader > div {
+  display: flex;
+  justify-content: space-between;
+}
+.browse .browseHeader > div h3 {
+  color: #72db73;
+  position: relative;
+  right: 29px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  font-family: "Single Day", cursive;
+}
+.browse .browseHeader > div div {
+  cursor: pointer;
+}
+.browse .browseHeader > div div img {
+  width: 61px;
+  height: 61px;
+}
+.browse .browseHeader > h3 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 22.5px;
+  margin: 8px 0;
+  font-family: "Roboto", sans-serif;
+}
+.browse .browseBody {
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.browse ::-webkit-scrollbar {
+  width: 16px;
+}
+.browse ::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a;
+  border-radius: 16px;
+}
+.browse ::-webkit-scrollbar-track {
+  background-color: #949494;
+  border-radius: 16px;
+}
