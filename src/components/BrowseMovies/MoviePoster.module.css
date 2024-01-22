@@ -1,0 +1,20 @@
+.moviePoster {
+  width: 320px;
+  height: 220px;
+  border-radius: 0.6rem;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  margin: 15px;
+  box-shadow: 0px 6px 26px 0px rgba(0, 0, 0, 0.61) inset,
+    -3px -7px 16px 0px rgba(95, 88, 88, 0.23);
+}
+.moviePoster img {
+  width: 320px;
+  height: 220px;
+  border-radius: 0.6rem;
+}

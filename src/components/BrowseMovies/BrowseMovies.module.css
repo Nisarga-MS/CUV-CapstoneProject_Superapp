@@ -1,0 +1,27 @@
+.browseMovies {
+  width: 90%;
+  margin: 0 auto;
+}
+.browseMovies > div h3 {
+  color: #878787;
+  font-size: 22.5px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin: 22.5px 0px;
+}
+.browseMovies > div .moviesList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading,
+.apiError {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
