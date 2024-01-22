@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import useDate from "../../hooks/useDate";
-import Notes from "../Notes/Notes";
+import Timer from "../Timer/Timer";
+
 
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
   }, []);
   return (
   <div>
-  <Notes />
+  <Timer />
   </div>
   );
 }
