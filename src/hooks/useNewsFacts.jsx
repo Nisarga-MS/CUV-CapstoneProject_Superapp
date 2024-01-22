@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const reqUrl = `https://newsapi.org/v2/everything?q=tech&from=2024-01-01&sortBy=popularity&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`;
+const reqUrl = `https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`;
 
 export default function useNewsFacts() {
   const [newsData, setNewsData] = useState({});
