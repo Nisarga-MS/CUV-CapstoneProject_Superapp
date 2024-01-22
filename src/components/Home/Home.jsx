@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import useDate from "../../hooks/useDate";
-import News from "../News/News";
+import Notes from "../Notes/Notes";
 
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
   }, []);
   return (
   <div>
-  <News dateTime={dateTime} />
+  <Notes />
   </div>
   );
 }
