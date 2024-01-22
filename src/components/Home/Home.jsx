@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import useDate from "../../hooks/useDate";
-import Weather from "../Weather/Weather";
+import News from "../News/News";
+
 
 export default function Home() {
   const [minutes, setMinutes] = useState(new Date().getMinutes());
@@ -17,7 +18,7 @@ export default function Home() {
   }, []);
   return (
   <div>
-  <Weather dateTime={dateTime} />
+  <News dateTime={dateTime} />
   </div>
   );
 }
